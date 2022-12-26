@@ -3,7 +3,7 @@ import Card from '../UI/Card';
 import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
-const ExpenseItem = ({ title, date, amount, clickHandler }) => {
+const ExpenseItem = ({ title, date, amount }) => {
   return (
     <li>
       <Card className='expense-item'>
@@ -12,7 +12,6 @@ const ExpenseItem = ({ title, date, amount, clickHandler }) => {
           <h2>{title}</h2>
           <div className='expense-item__price'>${amount}</div>
         </div>
-        <button onClick={clickHandler}>Change Title</button>
       </Card>
     </li>
   );
